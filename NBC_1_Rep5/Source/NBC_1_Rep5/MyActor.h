@@ -24,11 +24,20 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	
 private:
-	UPROPERTY()
 	FVector2D start;
 
-	void move();
+	UPROPERTY()
+	int32 TotalEventCount;
 
+	UPROPERTY()
+	float TotalDistance;
+
+	void move();
 	int32 step();
 
+	float distance(FVector2D first, FVector2D second);
+
+	int32 createEvent();
 };
+
+

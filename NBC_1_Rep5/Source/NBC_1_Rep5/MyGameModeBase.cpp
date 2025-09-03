@@ -18,6 +18,6 @@ void AMyGameModeBase::BeginPlay()
 
     if (MySpawnedActor)
     {
-        /*UE_LOG(LogTemp, Warning, TEXT("AMyActor has been spawned successfully!"));*/
+        /*UE_LOG(LogTemp, Warning, TEXT("AMyActor has been spawned successfully!"));*/ // 스폰체크용
     }
 }
